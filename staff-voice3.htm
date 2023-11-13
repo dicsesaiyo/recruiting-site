@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Staff voice 3</title>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-colors-2021.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-colors-signal.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-colors-safety.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-colors-highway.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-colors-2020.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-colors-2018.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" type="text/css" href="https://dicsesaiyo.github.io/recruiting-site/styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+</head>
+<style>
+    /* hold over link for prev and next page */
+    .link {
+        color: #000;
+        /* Default color */
+        transition: color 0.1s;
+        /* Smooth color transition */
+    }
+
+    .link:hover {
+        color: red;
+        /* Color on hover */
+    }
+
+    .link-view-all {
+        margin-left: 200px;
+        margin-right: 200px;
+    }
+
+    /* Media query for small screens */
+    @media screen and (max-width: 600px) {
+        .link-view-all {
+            margin-left: 60px;
+            margin-right: 60px;
+        }
+    }
+
+    @media (max-width: 600px) {
+
+        /* Adjust the size of prev and next arrow */
+        .material-symbols-outlined {
+            font-variation-settings:
+                'FILL' 0,
+                'wght' 400,
+                'GRAD' 0,
+                'opsz' 24
+        }
+
+        .w3-image-small {
+            text-align: center;
+            max-width: 50%;
+            height: auto;
+        }
+
+        /* Center images in their containers */
+        .w3-image-container {
+            display: flex;
+            justify-content: center;
+            /* Center horizontally */
+            align-items: center;
+            /* Center vertically */
+            margin-bottom: 20px;
+        }
+    }
+
+    /* Center images in their containers */
+    .w3-image-container {
+        display: flex;
+        justify-content: center;
+        /* Center horizontally */
+        align-items: center;
+        /* Center vertically */
+    }
+
+    /* Add margin between image containers */
+    .w3-third {
+        margin: 0px;
+        /* Adjust the margin as needed */
+    }
+</style>
+<body>
+    <div class="w3-top">
+        <div class="w3-bar w3-white w3-padding w3-card">
+            <img src="https://lh3.googleusercontent.com/pw/ADCreHdXb1yLlTSGMkHmHjUeen9eSn04gVlZIYfOgoQdCkp6PaCU1nWP-2FfmEk1T2mmPh6yU-lYw4pPRt_E-nUVihNBhFLinH0CIZllOt3kXggUi9WAZgk=w2400" alt="Company Logo" style="height: 40px; vertical-align: middle;">
+            <!-- Wrap the text with an anchor tag and remove underline -->
+            <a href="https://dicsesaiyo.github.io/recruiting-site/" style="display: inline-block; vertical-align: middle; line-height: 1; padding-top: 5px; text-decoration: none; color: black;">
+                <h5 style="margin: 0;"><b>RECRUITING</b></h5>
+                <h5 style="margin: 0;"><b>SITE 2024</b></h5>
+            </a>
+            <a class="w3-bar-item w3-button w3-padding w3-hide-large w3-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu" style="padding: 0;margin: 0; margin-top: 2px;"><i class="fa fa-bars"></i></a>
+            <!-- Right-sided navbar links. Hide them on small screens -->
+            <div class="w3-right w3-hide-medium w3-hide-small" style="vertical-align: middle;">
+                <a href="https://dicsesaiyo.github.io/recruiting-site/services.htm" class="w3-bar-item w3-button"><b>事業案内</b></a>
+                <a href="https://dicsesaiyo.github.io/recruiting-site/recruit.htm" class="w3-bar-item w3-button"><b>採用案内</b></a>
+                <a href="https://dicsesaiyo.github.io/recruiting-site/training.htm" class="w3-bar-item w3-button"><b>教育・研修</b></a>
+                <a href="https://dicsesaiyo.github.io/recruiting-site/benefits.htm" class="w3-bar-item w3-button"><b>福利厚生</b></a>
+                <a href="https://dicsesaiyo.github.io/recruiting-site/questions.htm" class="w3-bar-item w3-button"><b>Q&A</b></a>
+                <a href="https://www.dicse.com/" class="w3-bar-item w3-button" target="_blank"><b>DIC'SE HP</b></a>
+            </div>
+        </div>
+    </div>
+    <!-- Navbar on small screens-->
+    <div id="navDemo" class="w3-bar-block w3-2021-inkwell w3-hide w3-hide-large  w3-top" style="margin-top:56px">
+        <a href="https://dicsesaiyo.github.io/recruiting-site/services.htm" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">事業案内</a>
+        <a href="https://dicsesaiyo.github.io/recruiting-site/recruit.htm" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">採用案内</a>
+        <a href="https://dicsesaiyo.github.io/recruiting-site/training.htm" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">教育・研修</a>
+        <a href="https://dicsesaiyo.github.io/recruiting-site/benefits.htm" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">福利厚生</a>
+        <a href="https://dicsesaiyo.github.io/recruiting-site/questions.htm" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">Q&A</a>
+        <a href="https://www.dicse.com/" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()" target="_blank">DIC'SE HP</a>
+    </div>
+    <!-- voice content-->
+    <div class="w3-content" style="max-width:1100px; margin-top: 100px;">
+        <div class="w3-container w3-center" style="margin-top:30px;"><h3 style="color: rgb(238, 49, 49); margin: 0;"><b>STAFF VOICE</b></h3></div>
+        <!-- voice 1-->
+        <div class="w3-row" style="margin-top: 40px;">
+            <div class="w3-col w3-image-container m3 w3-right w3-padding">
+                <img src="https://lh3.googleusercontent.com/pw/ADCreHc2n9B1qSMkBjXnCJgYveJJeljSCvVbZ45g-2kSvnwkPzuaPTz94s7hx_OioPTF40k5Tl0TyRPInWjFLWkN7Mtz7v2c546u5OjfCC20KIE85tqwzNw=w2400" alt="senior staff" class="w3-image-small" style="width: 100%;">
+            </div>
+            <div class="w3-col m9 w3-left">
+                <div class="w3-panel w3-leftbar w3-border-blue w3-2018-tofu">
+                    <h5>電気の知識を活かして社会インフラを支える毎日。電鉄システムを守る最後の砦！<br>@ 牧田　嘉渡　（2020年入社）</h5>
+                </div>
+                <div class="w3-container w3-padding">
+                    <p>「電気の知識を活かして社会インフラを支える毎日。電鉄システムを守る最後の砦」 高校で学んだ電気科の知識とラグビー部の先輩がたくさん活躍している環境を頼って入社 を決めました。工業高校の知識だけでは仕事に就くには不安でしたが、エンジニアを育成する研修環境があることを知り、気持ちは固まりました。それともう一つ。社訓の「日々に改革、日々に前進」という前向きな創業精神のもとで頑張りたいという思いもありました。</p>
+                    <p>研修は座学から始まり、研修施設で実機を使って現場に似たような環境で安全確認の方法といった基礎から学びました。OJTが始まってからは、実機を見たり触ったりしたことがすぐに役立てられ、この研修があってよかったと思っています。</p>
+                    <p>現在の業務は、在来線の電車や新幹線の照明、空調を制御している補助電源装置 SIVの試験・出荷です。グループ 10名で担当していて、さらに4つのチームに分かれて作業をしています。1つの装置の作業には3〜4日かかります。はじめは装置の名前などわからないことが多くありました。日にちをかけて少しずつ理解できるようになり、上司や先輩から電機や 安全のこと、図面の見方なども一から教えてもらっています。毎日が楽しいです。 特に印象深いのは、装置を触り始めて3カ月くらいたった頃に、整流装置の試験を1人でやらせてもらったことです。小さな装置なので作業は1日で終わるのですが、トラブルなく自分 ひとりで出荷できて達成感がありました。</p>
+                    <p> 直属の上司からすごく熱心に、優しく技術を教えてもらい、尊敬しています。知識の豊富さや技術力の高さを感じています。自分はまだ駆け出しのエンジニアなので、とにかく装置への理解力や経験を高めていきたいです。自分たちの試験は車両の安全を守る最後の砦の重要な仕事です。後輩も毎年増えて、今は指導をする立場にもなりました。憧れる上司のようなエンジニアになりたいと思っています。</p>
+                </div>
+            </div>
+        </div><!-- end of voice 1-->
+        <!-- previous and next -->
+        <div class="w3-container w3-center" style="margin-top:30px; margin-bottom:50px;">
+            <a href="https://dicsesaiyo.github.io/recruiting-site/staff-voice2.htm" class="link" style="text-decoration: none; display: inline-block; vertical-align: middle;">
+                <span class="material-symbols-outlined" style="vertical-align: middle;">keyboard_double_arrow_left</span>
+                <b style="vertical-align: middle;">Prev</b>
+            </a>
+            <a href="https://dicsesaiyo.github.io/recruiting-site/staff-voices.htm" class="w3-xlarge link link-view-all"><b>View All</b></a>
+        </div>
+    </div><!-- end of the content -->
+    <hr>
+    <!-- Footer -->
+    <footer class="w3-container w3-padding" style="margin-top: 40px; height: 200px;">
+        <div class="w3-center">
+            <p>株式会社ディックソリューションエンジニアリング <br>
+            人事部　採用チーム</p>
+            <address>《本社》東京都港区浜松町1-29-6　浜松町セントラルビル２F <br>
+                ☎　03-6435-7899　✉　saiyo@dicse.com
+            </address>
+        </div>
+    </footer>
+</body>
+<script>
+    // Used to toggle the menu on small screens when clicking on the menu button
+    function myFunction() {
+        var x = document.getElementById("navDemo");
+        if (x.className.indexOf("w3-show") == -1) {
+            x.className += " w3-show";
+        } else {
+            x.className = x.className.replace(" w3-show", "");
+        }
+    }
+</script>
+</html>

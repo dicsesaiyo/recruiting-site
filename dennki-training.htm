@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title lang="jp">電気系研修</title>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-colors-2021.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-colors-signal.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-colors-safety.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-colors-highway.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-colors-2020.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" type="text/css" href="https://dicsesaiyo.github.io/recruiting-site/styles.css">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+</head>
+<style>
+    @media (min-width: 768px) {
+        .ITT {
+            margin-right: 150px;
+        }
+
+        .Voice {
+            margin-left: 150px;
+        }
+    }
+
+    /* Center images in their containers */
+    .w3-image-container {
+        display: flex;
+        justify-content: center;
+        /* Center horizontally */
+        align-items: center;
+        /* Center vertically */
+    }
+
+    /* Add a hover effect for the images and style the links */
+    .w3-image-link {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        transition: transform 0.3s;
+        /* Add a smooth transition */
+    }
+
+    .w3-image-link:hover {
+        transform: scale(1.05);
+        /* Increase the size on hover */
+    }
+
+    /* Add margin between image containers */
+    .w3-third {
+        margin: 0px;
+        /* Adjust the margin as needed */
+    }
+
+    /* hold over link for prev and next page */
+    .link {
+        color: #000;
+        /* Default color */
+        transition: color 0.1s;
+        /* Smooth color transition */
+    }
+
+    .link:hover {
+        color: red;
+        /* Color on hover */
+    }
+
+    @media (max-width: 600px) {
+
+        /* Adjust the size of prev and next arrow */
+        .material-symbols-outlined {
+            font-variation-settings:
+                'FILL' 0,
+                'wght' 400,
+                'GRAD' 0,
+                'opsz' 24
+        }
+
+        .w3-third {
+            width: 100%;
+            text-align: center;
+        }
+
+        .w3-image-small {
+            text-align: center;
+            max-width: 50%;
+            height: auto;
+        }
+
+        /* Center images in their containers */
+        .w3-image-container {
+            display: flex;
+            justify-content: center;
+            /* Center horizontally */
+            align-items: center;
+            /* Center vertically */
+            margin-bottom: 20px;
+        }
+
+        .ITT {
+            margin-right: 50px;
+        }
+
+        .Voice {
+            margin-left: 50px;
+        }
+    }
+</style>
+
+<body>
+    <div class="w3-top">
+        <div class="w3-bar w3-white w3-padding w3-card">
+            <img src="https://lh3.googleusercontent.com/pw/ADCreHdXb1yLlTSGMkHmHjUeen9eSn04gVlZIYfOgoQdCkp6PaCU1nWP-2FfmEk1T2mmPh6yU-lYw4pPRt_E-nUVihNBhFLinH0CIZllOt3kXggUi9WAZgk=w2400"
+                alt="Company Logo" style="height: 40px; vertical-align: middle;">
+            <!-- Wrap the text with an anchor tag and remove underline -->
+            <a href="https://dicsesaiyo.github.io/recruiting-site/"
+                style="display: inline-block; vertical-align: middle; line-height: 1; padding-top: 5px; text-decoration: none; color: black;">
+                <h5 style="margin: 0;"><b>RECRUITING</b></h5>
+                <h5 style="margin: 0;"><b>SITE 2024</b></h5>
+            </a>
+            <a class="w3-bar-item w3-button w3-padding w3-hide-large w3-right" href="javascript:void(0)"
+                onclick="myFunction()" title="Toggle Navigation Menu" style="padding: 0;margin: 0; margin-top: 2px;"><i
+                    class="fa fa-bars"></i></a>
+            <!-- Right-sided navbar links. Hide them on small screens -->
+            <div class="w3-right w3-hide-medium w3-hide-small" style="vertical-align: middle;">
+                <a href="https://dicsesaiyo.github.io/recruiting-site/services.htm"
+                    class="w3-bar-item w3-button"><b>事業案内</b></a>
+                <a href="https://dicsesaiyo.github.io/recruiting-site/recruit.htm"
+                    class="w3-bar-item w3-button"><b>採用案内</b></a>
+                <a href="https://dicsesaiyo.github.io/recruiting-site/staff-voices.htm"
+                    class="w3-bar-item w3-button"><b>社員の声</b></a>
+                <a href="https://dicsesaiyo.github.io/recruiting-site/benefits.htm"
+                    class="w3-bar-item w3-button"><b>福利厚生</b></a>
+                <a href="https://dicsesaiyo.github.io/recruiting-site/questions.htm"
+                    class="w3-bar-item w3-button"><b>Q&A</b></a>
+                <a href="https://www.dicse.com/" class="w3-bar-item w3-button" target="_blank"><b>DIC'SE HP</b></a>
+            </div>
+        </div>
+    </div>
+    <!-- Navbar on small screens-->
+    <div id="navDemo" class="w3-bar-block w3-2021-inkwell w3-hide w3-hide-large  w3-top" style="margin-top:57px">
+        <a href="https://dicsesaiyo.github.io/recruiting-site/services.htm"
+            class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">事業案内</a>
+        <a href="https://dicsesaiyo.github.io/recruiting-site/recruit.htm"
+            class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">採用案内</a>
+        <a href="https://dicsesaiyo.github.io/recruiting-site/staff-voices.htm"
+            class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">社員の声</a>
+        <a href="https://dicsesaiyo.github.io/recruiting-site/benefits.htm"
+            class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">福利厚生</a>
+        <a href="https://dicsesaiyo.github.io/recruiting-site/questions.htm"
+            class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">Q&A</a>
+        <a href="https://www.dicse.com/" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()"
+            target="_blank">DIC'SE HP</a>
+    </div>
+    <!-- voice content-->
+    <div class="w3-content" style="max-width:1100px; margin-top: 100px;">
+        <div class="w3-container w3-center" style="margin-top:30px;">
+            <h3 style="color: rgb(238, 49, 49); margin: 0;"><b>講師が語る研修の取り組み</b></h3>
+        </div>
+        <!-- voice 1-->
+        <div class="w3-row" style="margin-top: 40px;">
+            <div class="w3-col w3-image-container m3 w3-right w3-padding">
+                <img src="https://lh3.googleusercontent.com/pw/ADCreHeRRH5-5mRyA3c6WFt4T-x622lCD4_uvGM2Kwvbwq7yBc_m9iw8kvqd07yYL-mJ0nakeJQ53WEGYSnZw8w25wBx_eAckj5Uv-xACrYGWSGMMYhaCWI=w2400"
+                    alt="senior staff" class="w3-image-small" style="width: 100%;">
+            </div>
+            <div class="w3-col m9 w3-left">
+                <div class="w3-container w3-highway-blue w3-padding">
+                    <p><span class="w3-large"><b>“高電圧部品の扱い方も実機で学び、技術力の高い人財を育成！”　「講師」　丸塚　翔太</b></span></p>
+                </div>
+                <div class="w3-container w3-padding">
+                    <h5><b>Q.電機事業って、どんな仕事をするのでしょうか？</b></h5>
+                    <p><b>A.</b>電力を変換・制御するパワーエレクトロニクス、上下水道、再生可能エネルギー、鉄道・空港、鉄鋼プラント、産業用ドライブ装置に関連したシステム開発支援や工場試験、現地調整を行っています。
+                    </p>
+                    <h5><b>Q.研修のテーマは？</b></h5>
+                    <p><b>A.</b>大きな目的としては安全に対する意識を高めること。そして、実機を操作し仕事のイメージを掴んでもらうことです。電気を取り扱うことの多い職場ですから、ケガや事故はあってはなりません。どうすれば安全に作業を進めることができるのか、どういう所に注意しなければならないのかを学び、しっかりと訓練を重ねてから、実際の現場に出てほしいと考えています。
+                    </p>
+                    <h5><b>Q.具体的な研修内容は？</b></h5>
+                    <p><b>A.</b>法定特別教育と言われる「電気取扱い」のほか業務に関係する特別教育は必須です。専門知識を効率良く身につけるために、電機制御の基礎が学べるe-ラーニングも活用しています。また、制御盤や専門機器を使っての実作業も体験します。電気の知識のない未経験の方でも安心して受講できるカリキュラムとなっています。
+                    </p>
+                    <h5><b>先進技術にふれられますか？</b></h5>
+                    <p><b>A.</b>電機制御の世界も技術革新が進んでいて、私たちは最先端技術を採り入れながら業務に取り組んでいます。工場試験でも、ICタグの情報を非接触で読み書きするRFID、Wi-Fiを使った遠隔操作など新しい技術を積極的に採用しています。設計でもオペレーターが操作しやすいように画面デザインに力を入れています。
+                    </p>
+                    <h5><b>研修を受けた人たちの感想は？</b></h5>
+                    <p><b>A.</b>具体的に「ここがおもしろかった」「こういう仕事があるのか」「自分に向いているかも」という感想が多いです。最近増えて来た情報系や文系出身者からは「イメージが湧いて来た」「とても新鮮」という感想が上がります。そういう声はうれしいですね。私たちの研修はうまくいっているという手応えを感じます。
+                    </p>
+                </div>
+            </div>
+        </div><!-- end of voice 1-->
+        <!--研修設備-->
+        <div class="w3-panel w3-center w3-highway-blue" style="margin-top: 50px;">
+            <h5 style="color: #ffffff;"><b>研修施設「府中LABO」</b></h5>
+        </div>
+        <div class="w3-panel w3-center">
+            <h3 style="color: red;"><b>高電圧部品の扱い方も実機で学ぶ。技術力の高い人財を育成!</b></h3>
+            <p><b>当社は、技術者の技術力・提案力・判断力でお客様から高いご評価をいただいています。府中LABOには、受変電設備やモータードライブ装置、中央監視装置の実機を設置。実務に即した環境でエンジニア養成をサポートしています。PLCとHMIを使ったシミュレーションテストで納入するシステムの品質確保と付加価値向上を目指しています。</b>
+            </p>
+        </div>
+        <div class="w3-row-padding">
+            <div class="w3-third">
+                <img src="https://lh3.googleusercontent.com/pw/ADCreHdw16_TXDEQ9z52EcN9tETbfUD48QBqhRxyLHs8dwyA7xek4peqgPFPuq3IJ7jNhivtgzj5YTaPZMtK-aa2Jb2l0u8PQSBk0BwWiK63pr7KoU-4aXg=w2400"
+                    alt="device" style="width:100%">
+                <div class="w3-panel w3-border-left w3-border-grey">
+                    <h5>受変電設備の制御盤は全部で４面</h5>
+                </div>
+            </div>
+            <div class="w3-third">
+                <img src="https://lh3.googleusercontent.com/pw/ADCreHcXcLnn2_4nDpDET1p6HEgxRhuXHh1f7auf9H8rxysGv_0NG3lFDO0CzngoTaavUjsinYfisPfOBQv7vsQkulKyQvO1FOlDQtFccPSLIyBNv5qPDyQ=w2400"
+                    alt="device" style="width:100%">
+                <div class="w3-panel w3-border-left w3-border-grey">
+                    <h5>DIC’SE自社設計のモータードライブ装置制御盤とその外部</h5>
+                </div>
+            </div>
+
+            <div class="w3-third">
+                <img src="https://lh3.googleusercontent.com/pw/ADCreHeUYZ1zhFowgDzgDUmlcjbB_Tjtcf7dHnu7_0ev6eIIe743OUe-3qpdrG20qF0A_0Ov_nqREkmFxCq48eLuuih-FzcTb5iapzF66RnGJZhXJuQy-l8=w2400"
+                    alt="device" style="width:100%">
+                <div class="w3-panel w3-border-left w3-border-grey">
+                    <h5>DIC’SE自社設計のモータードライブ装置制御盤とその内部</h5>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- previous and next -->
+        <div class="w3-container w3-center" style="margin-top: 50px; margin-bottom: 50px;">
+            <a href="https://dicsesaiyo.github.io/recruiting-site/it-training.htm" class="w3-large link ITT"
+                style="text-decoration: none; display: inline-block; vertical-align: middle;">
+                <span class="material-symbols-outlined"
+                    style="vertical-align: middle;">keyboard_double_arrow_left</span>
+                <b style="vertical-align: middle;">情通系研修</b>
+            </a>
+            <a href="https://dicsesaiyo.github.io/recruiting-site/training-voice.htm" class="w3-large link Voice"
+                style="text-decoration: none; display: inline-block; vertical-align: middle;">
+                <b style="vertical-align: middle;">受講生の声</b>
+                <span class="material-symbols-outlined"
+                    style="vertical-align: middle;">keyboard_double_arrow_right</span>
+            </a>
+        </div>
+    </div><!-- end of the content -->
+    <hr>
+    <!-- Footer -->
+    <footer class="w3-container w3-padding" style="margin-top: 40px; height: 200px;">
+        <div class="w3-center">
+            <p>株式会社ディックソリューションエンジニアリング <br>
+                人事部　採用チーム</p>
+            <address>《本社》東京都港区浜松町1-29-6　浜松町セントラルビル２F <br>
+                ☎　03-6435-7899　✉　saiyo@dicse.com
+            </address>
+        </div>
+    </footer>
+</body>
+<script>
+    // Used to toggle the menu on small screens when clicking on the menu button
+    function myFunction() {
+        var x = document.getElementById("navDemo");
+        if (x.className.indexOf("w3-show") == -1) {
+            x.className += " w3-show";
+        } else {
+            x.className = x.className.replace(" w3-show", "");
+        }
+    }
+</script>
+
+</html>

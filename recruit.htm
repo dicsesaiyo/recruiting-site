@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title lang="jp">採用案内</title>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-colors-2021.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-colors-signal.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-colors-safety.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-colors-highway.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" type="text/css" href="https://dicsesaiyo.github.io/recruiting-site/styles.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<style>
+    /* size of mynavi */
+.mynavi {
+    width: 50%;
+    float: left;
+}
+
+@media screen and (max-width: 600px) {
+    .mynavi {
+        width: 100%;
+    }
+}
+table {
+        width: 100%;
+    }
+
+    th,
+    td {
+        border: 1px solid #ddd;
+        padding: 10px;
+        text-align: left;
+    }
+
+    th {
+        background-color: #d4cfcf;
+    }
+
+
+    .menu {
+        display: none;
+    }
+
+    .active-tab {
+        background-color: #f2f2f2;
+    }
+
+    .active-menu {
+        display: block;
+    }
+
+    /* For small screens, make the table content full width and remove any spacing */
+    @media (max-width: 600px) {
+        #table-content {
+            max-width: 100%;
+            margin: 15px;
+            /* Set margin to 0 to remove space around the table */
+            padding: 0px;
+            /* Set padding to 0 to remove space around the table */
+            margin-top: 0px;
+        }
+
+        #table-content table {
+            width: 100%;
+            margin: 0;
+            padding: 0;
+        }
+
+        #table-content th,
+        #table-content td {
+            display: block;
+            width: 100%;
+        }
+
+        #table-content td {
+            margin-bottom: 5px;
+        }
+
+        .tablink {
+            /* Adjusting width to 100% for small screens */
+            width: 100%;
+            padding: 20px;
+        }
+    }
+
+    @media (max-width: 1100px) {
+        .w3-row {
+            padding: 0px;
+            margin-left: 2px;
+            margin-right: 2px;
+            margin-bottom: 5px;
+        }
+    }
+</style>
+<body>
+    <div class="w3-top">
+        <div class="w3-bar w3-white w3-padding w3-card">
+            <img src="https://lh3.googleusercontent.com/pw/ADCreHdXb1yLlTSGMkHmHjUeen9eSn04gVlZIYfOgoQdCkp6PaCU1nWP-2FfmEk1T2mmPh6yU-lYw4pPRt_E-nUVihNBhFLinH0CIZllOt3kXggUi9WAZgk=w2400"
+                alt="Company Logo" style="height: 40px; vertical-align: middle;">
+            <!-- Wrap the text with an anchor tag and remove underline -->
+            <a href="https://dicsesaiyo.github.io/recruiting-site/"
+                style="display: inline-block; vertical-align: middle; line-height: 1; padding-top: 5px; text-decoration: none; color: black;">
+                <h5 style="margin: 0;"><b>RECRUITING</b></h5>
+                <h5 style="margin: 0;"><b>SITE 2024</b></h5>
+            </a>
+            <a class="w3-bar-item w3-button w3-padding w3-hide-large w3-right" href="javascript:void(0)"
+                onclick="myFunction()" title="Toggle Navigation Menu" style="padding: 0;margin: 0; margin-top: 2px;"><i
+                    class="fa fa-bars"></i></a>
+            <!-- Right-sided navbar links. Hide them on small screens -->
+            <div class="w3-right w3-hide-medium w3-hide-small" style="vertical-align: middle;">
+                <a href="https://dicsesaiyo.github.io/recruiting-site/services.htm"
+                    class="w3-bar-item w3-button"><b>事業案内</b></a>
+                <a href="https://dicsesaiyo.github.io/recruiting-site/training.htm"
+                    class="w3-bar-item w3-button"><b>教育・研修</b></a>
+                <a href="https://dicsesaiyo.github.io/recruiting-site/staff-voices.htm"
+                    class="w3-bar-item w3-button"><b>社員の声</b></a>
+                <a href="https://dicsesaiyo.github.io/recruiting-site/benefits.htm"
+                    class="w3-bar-item w3-button"><b>福利厚生</b></a>
+                <a href="https://dicsesaiyo.github.io/recruiting-site/questions.htm"
+                    class="w3-bar-item w3-button"><b>Q&A</b></a>
+                <a href="https://www.dicse.com/" class="w3-bar-item w3-button" target="_blank"><b>DIC'SE HP</b></a>
+            </div>
+        </div>
+    </div>
+    <!-- Navbar on small screens-->
+    <div id="navDemo" class="w3-bar-block w3-2021-inkwell w3-hide w3-hide-large  w3-top" style="margin-top:57px">
+        <a href="https://dicsesaiyo.github.io/recruiting-site/services.htm"
+            class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">事業案内</a>
+        <a href="https://dicsesaiyo.github.io/recruiting-site/training.htm"
+            class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">教育・研修</a>
+        <a href="https://dicsesaiyo.github.io/recruiting-site/staff-voices.htm"
+            class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">社員の声</a>
+        <a href="https://dicsesaiyo.github.io/recruiting-site/benefits.htm"
+            class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">福利厚生</a>
+        <a href="https://dicsesaiyo.github.io/recruiting-site/questions.htm"
+            class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">Q&A</a>
+        <a href="https://www.dicse.com/" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()"
+            target="_blank">DIC'SE HP</a>
+    </div>
+    <!-- Header with image -->
+    <header class="w3-display-container w3-content w3-center" style="max-width:1500px;margin-top:58px;">
+        <img class="w3-image w3-hide-small"
+            src="https://lh3.googleusercontent.com/pw/ADCreHfywjNW0fheURft48hSrcUPCCA5Mp1AxWd7W31PtJpDtqqlFwNJspNa_MMaGE3uQzmtA4HsC8s7kdz8_mVfk7qouE-dffqNROE5XNdC5HOQ5M1SZCc=w2400"
+            alt="Me" width="100%">
+        <img class="w3-image w3-hide-large w3-hide-medium"
+            src="https://lh3.googleusercontent.com/pw/ADCreHd0kBPivFn6Ncvf3wFX0YS4uzWH4OiskRWvYBeEvGcWlBh1uCiNn8L8y1jmP74rd45qSIv8ZYa2qm1gdDwXg1gfT9QRU7Gb7qH_3WRMTeUVKBGjlq8=w2400"
+            alt="Me" width="100%">
+    </header>
+    <div class="w3-content" style="max-width: 1100px;">
+        <div class="w3-container" style="margin-top: 30px;">
+            <h2 class="w3-center"><b>募集要項</b></h2>
+            <div class="w3-row w3-center" style="margin-bottom:10px; margin-left: 2px; margin-right: 2px;">
+                <button class="w3-col s6 tablink w3-highway-blue w3-padding" style="border:none;" id="defaultOpen"
+                    onclick="openMenu(event, 'new')">新卒採用</button>
+                <button class="w3-col s6 tablink w3-padding" style="border:none;"
+                    onclick="openMenu(event, 'old')">中途採用</button>
+            </div>
+        </div>
+
+        <div class="w3-container" style="max-width: 1100px;" id="table-content">
+            <table class="menu" id="new">
+                <!--新卒採用-->
+                <tr>
+                    <th>職種</th>
+                    <td>
+                        ITエンジニア/電機エンジニア
+                    </td>
+                </tr>
+                <tr>
+                    <th>給与/月給</th>
+                    <td>
+                        大学院卒 月給251.200円<br>
+                        大学卒 月給240.200円<br>
+                        3年制専門学校卒 月給229.200円<br>
+                        2年制専門卒 月給223.200円<br>
+                        (2023年4月実績)
+                    </td>
+                </tr>
+                <tr>
+                    <th>諸手当</th>
+                    <td>
+                        時間外手当・役職手当・資格手当・配偶者手当など<br>
+                        交通費支給上限35.000円/月</td>
+                </tr>
+                <tr>
+                    <th>昇給</th>
+                    <td>年1回(4月)<br>
+                        ※年齢に関係なく能力・実績による</td>
+                </tr>
+                <tr>
+                    <th>賞与</th>
+                    <td>年2回（6月/12月）<br>
+                        ※過去実績　平均 4ヶ月分以上</td>
+                </tr>
+                <tr>
+                    <th>勤務地</th>
+                    <td>IT系エンジニア：東京都大田区/台東区など<br>
+                        電機エンジニア：東京都府中市</td>
+                </tr>
+                <tr>
+                    <th>勤務時間</th>
+                    <td>8:30 ~ 17:30（休憩1時間/プロジェクトにより変動あり）</td>
+                </tr>
+                <tr>
+                    <th>休日・休暇</th>
+                    <td>完全週休2日制（GW・夏季休暇・年末年始休暇あり）<br>
+                        初年度有給休暇付与18日・年間休日124日</td>
+
+                <tr>
+                    <th>保険</th>
+                    <td>健康保険・厚生年金・雇用保険・労災保険完備</td>
+                </tr>
+                <tr>
+                    <th>福利厚生</th>
+                    <td>資格取得奨励制度・退職金制度あり・慶弔見舞金<br>
+                        介護休暇・育児休暇・福利厚生サービス:BenefitOne加入など</td>
+                </tr>
+                <tr>
+                    <th>教育制度</th>
+                    <td>【社内常設の研修センターで独自の研修システムで資格取得まで導きます】<br>
+                        新入社員研修：マナー研修・ビジネス研修・技術/資格取得研修<br>
+                        入社後1～4年目フォロー研修(年１回)、階層別教育など<br>
+                        ※資格取得：Cisco社CCNA、AMAZON社AWS,Microsoft社Azure,Linuxなどの認定資格<br>
+                        　　　　　 基本情報技術者、応用情報技術者などの国家資格<br></td>
+                </tr>
+                <tr>
+                    <th style="white-space: nowrap;">採用予定人数</th>
+                    <td>ITエンジニア（20名）<br>
+                        電機エンジニア（20名）</td>
+                </tr>
+                <tr>
+                    <th>募集学科</th>
+                    <td>全学部全学科/留学生の応募可</td>
+                </tr>
+
+                </tr>
+                <tr class="w3-hide-small">
+                    <th>会社説明会 <br>
+                        　申込先</th>
+                    <td class="w3-container s6">
+                        <a href="https://job.mynavi.jp/25/pc/search/corp83840/outline.html" target="_blank">
+                            <img src="https://lh3.googleusercontent.com/pw/ADCreHcwpg_OEZBr4qLX_C3ygpuz9UuZ7E7QKm_ewAg3IgS__-QeFgav5VPNQuDoCZl3DNGY_mTTDefwUxd_JhXL0fLI6CT9aWuWG79mz05VFutZdMyOfPM=w2400"
+                                alt="Description of Image" style="width: 50%;float: left;">
+                        </a>
+                        <img src="https://lh3.googleusercontent.com/pw/ADCreHfQgLhmQBACMoRIUD7rHA4uz1IuR3gHiEPkNiNimWka3qj7BLlwXHFbIgGKlBv61ZqRW22OnccRa_z3RzDwV-UNm1eW_FGaJXT95vLXOirtzL1xH2E=w2400"
+                            alt="make an appointment" style="width: 50%;float: left;">
+                    </td>
+                </tr>
+                <tr class="w3-hide-medium w3-hide-large">
+                    <th>会社説明会 <br>
+                        　　申込先</th>
+                    <td class="w3-container s6">
+                        <a href="https://job.mynavi.jp/25/pc/search/corp83840/outline.html" target="_blank">
+                            <img src="https://lh3.googleusercontent.com/pw/ADCreHcwpg_OEZBr4qLX_C3ygpuz9UuZ7E7QKm_ewAg3IgS__-QeFgav5VPNQuDoCZl3DNGY_mTTDefwUxd_JhXL0fLI6CT9aWuWG79mz05VFutZdMyOfPM=w2400"
+                                alt="Description of Image" style="width: 100%;">
+                        </a>
+                        <img src="https://lh3.googleusercontent.com/pw/ADCreHfQgLhmQBACMoRIUD7rHA4uz1IuR3gHiEPkNiNimWka3qj7BLlwXHFbIgGKlBv61ZqRW22OnccRa_z3RzDwV-UNm1eW_FGaJXT95vLXOirtzL1xH2E=w2400"
+                            alt="make an appointment" style="width: 100%; margin-top: 10px;">
+                    </td>
+                </tr>
+            </table>
+            <!--中途採用-->
+            <table class="menu" id="old">
+                <tr>
+                    <th>職種</th>
+                    <td>
+                        ITエンジニア/電機エンジニア<br>
+                        経験は問いません、未経験者も歓迎
+                    </td>
+                </tr>
+                <tr>
+                    <th>給与/月給</th>
+                    <td>
+                        経験、最終卒業校歴、年齢、勤務エリアにより異なります<br>
+
+
+                    </td>
+                </tr>
+                <tr>
+                    <th>諸手当</th>
+                    <td>
+                        時間外手当・役職手当・資格手当・配偶者手当など<br>
+                        交通費支給上限35.000円/月</td>
+                </tr>
+                <tr>
+                    <th>昇給</th>
+                    <td>年1回(4月)<br>
+                        ※年齢に関係なく能力・実績による</td>
+                </tr>
+                <tr>
+                    <th>賞与</th>
+                    <td>年2回（6月/12月）<br>
+                        ※過去実績　平均 4ヶ月分以上</td>
+                </tr>
+                <tr>
+                    <th>勤務地</th>
+                    <td>全国の弊社事業所からお選びいただけます</td>
+                </tr>
+                <tr>
+                    <th>勤務時間</th>
+                    <td>8:30 ~ 17:30（休憩1時間/プロジェクトにより変動あり）</td>
+                </tr>
+                <tr>
+                    <th>休日・休暇</th>
+                    <td>完全週休2日制（GW・夏季休暇・年末年始休暇あり）<br>
+                        初年度有給休暇付与18日・年間休日124日</td>
+
+                <tr>
+                    <th>保険</th>
+                    <td>健康保険・厚生年金・雇用保険・労災保険完備</td>
+                </tr>
+                <tr>
+                    <th>福利厚生</th>
+                    <td>資格取得奨励制度・退職金制度あり・慶弔見舞金<br>
+                        介護休暇・育児休暇・福利厚生サービス:BenefitOne加入など</td>
+                </tr>
+                <tr>
+                    <th>教育制度</th>
+                    <td>【社内常設の研修センターで独自の研修システムで資格取得まで導きます】<br>
+                        ※資格取得：Cisco社CCNA、AMAZON社AWS,Microsoft社Azure,Linuxなどの認定資格<br>
+                        　　　　　 基本情報技術者、応用情報技術者などの国家資格<br></td>
+                </tr>
+                <tr>
+                    <th>ご応募</th>
+                    <td class="w3-container s6">
+                        <a href="https://tenshoku.mynavi.jp/jobinfo-233864-3-1-1/" target="_blank">
+                            <img src="https://lh3.googleusercontent.com/pw/ADCreHefMDThIX9sidHASt2HfhYkiB7BaHC8ryKGISVtCNCTImFzZ5phNZKyD__fstuNl20J9S2GW9Gt0JpHm1TcnUMISBkVPYQvOcGw54sIKaFV0GKT00k=w2400"
+                                alt="Description of Image" class="mynavi">
+                        </a>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    </div>
+    <hr>
+    <!-- Footer -->
+    <footer class="w3-container w3-padding" style="margin-top: 40px; height: 200px;">
+        <div class="w3-center">
+            <p>株式会社ディックソリューションエンジニアリング <br>
+                人事部　採用チーム</p>
+            <address>《本社》東京都港区浜松町1-29-6　浜松町セントラルビル２F <br>
+                ☎　03-6435-7899　✉　saiyo@dicse.com
+            </address>
+        </div>
+    </footer>
+</body>
+<script>
+
+    // Used to toggle the menu on small screens when clicking on the menu button
+    function myFunction() {
+        var x = document.getElementById("navDemo");
+        if (x.className.indexOf("w3-show") == -1) {
+            x.className += " w3-show";
+        } else {
+            x.className = x.className.replace(" w3-show", "");
+        }
+    }
+    function openMenu(evt, menuName) {
+        var i, tabcontent, tablinks;
+
+        // Get all elements with class="menu" and hide them
+        tabcontent = document.getElementsByClassName("menu");
+        for (i = 0; i < tabcontent.length; i++) {
+            tabcontent[i].style.display = "none";
+        }
+
+        // Get all elements with class="tablink" and remove the class "w3-teal"
+        tablinks = document.getElementsByClassName("tablink");
+        for (i = 0; i < tablinks.length; i++) {
+            tablinks[i].classList.remove("w3-highway-blue");
+        }
+
+        // Show the current tab, and add a "w3-teal" class to the button that opened the tab
+        document.getElementById(menuName).style.display = "table";
+        evt.currentTarget.classList.add("w3-highway-blue");
+    }
+
+    // Click the "新卒採用" tab button by default
+    document.getElementById("defaultOpen").click();
+
+</script>
+
+</html>

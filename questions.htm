@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html>
+    
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q & A</title>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-colors-2021.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-colors-signal.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" type="text/css" href="https://dicsesaiyo.github.io/recruiting-site/styles.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<style>
+    /* Add margin between the text and the icon */
+    button span {
+        margin-right: 20px;
+        /* Adjust the value to control the spacing */
+    }
+
+    /* adjust the よくある質問 to be center */
+    .w3-middle {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+    }
+</style>
+<body>
+    <div class="w3-top">
+        <div class="w3-bar w3-white w3-padding w3-card">
+            <img src="https://lh3.googleusercontent.com/pw/ADCreHdXb1yLlTSGMkHmHjUeen9eSn04gVlZIYfOgoQdCkp6PaCU1nWP-2FfmEk1T2mmPh6yU-lYw4pPRt_E-nUVihNBhFLinH0CIZllOt3kXggUi9WAZgk=w2400"
+                alt="Company Logo" style="height: 40px; vertical-align: middle;">
+            <!-- Wrap the text with an anchor tag and remove underline -->
+            <a href="https://dicsesaiyo.github.io/recruiting-site/" style="display: inline-block; vertical-align: middle; line-height: 1; padding-top: 5px; text-decoration: none; color: black;">
+                <h5 style="margin: 0;"><b>RECRUITING</b></h5>
+                <h5 style="margin: 0;"><b>SITE 2024</b></h5>
+            </a>
+            <a class="w3-bar-item w3-button w3-padding w3-hide-large w3-right" href="javascript:void(0)"
+                onclick="myFunction()" title="Toggle Navigation Menu" style="padding: 0;margin: 0; margin-top: 2px;"><i class="fa fa-bars"></i></a>
+            <!-- Right-sided navbar links. Hide them on small screens -->
+            <div class="w3-right w3-hide-medium w3-hide-small" style="vertical-align: middle;">
+                <a href="https://dicsesaiyo.github.io/recruiting-site/services.htm" class="w3-bar-item w3-button"><b>事業案内</b></a>
+                <a href="https://dicsesaiyo.github.io/recruiting-site/recruit.htm" class="w3-bar-item w3-button"><b>採用案内</b></a>
+                <a href="https://dicsesaiyo.github.io/recruiting-site/training.htm" class="w3-bar-item w3-button"><b>教育・研修</b></a>
+                <a href="https://dicsesaiyo.github.io/recruiting-site/staff-voices.htm" class="w3-bar-item w3-button"><b>社員の声</b></a>
+                <a href="https://dicsesaiyo.github.io/recruiting-site/benefits.htm" class="w3-bar-item w3-button"><b>福利厚生</b></a>
+                <a href="https://www.dicse.com/" class="w3-bar-item w3-button" target="_blank"><b>DIC'SE HP</b></a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navbar on small screens-->
+    <div id="navDemo" class="w3-bar-block w3-2021-inkwell w3-hide w3-hide-large  w3-top" style="margin-top:57px">
+        <a href="https://dicsesaiyo.github.io/recruiting-site/services.htm" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">事業案内</a>
+        <a href="https://dicsesaiyo.github.io/recruiting-site/recruit.htm" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">採用案内</a>
+        <a href="https://dicsesaiyo.github.io/recruiting-site/training.htm" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">教育・研修</a>
+        <a href="https://dicsesaiyo.github.io/recruiting-site/staff-voices.htm" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">社員の声</a>
+        <a href="https://dicsesaiyo.github.io/recruiting-site/benefits.htm" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">福利厚生</a>
+        <a href="https://www.dicse.com/" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()" target="_blank">DIC'SE HP</a>
+    </div>
+
+    <div class="w3-panel w3-teal w3-padding" style="margin-top: 50px; height: 200px;">
+        <h1 class="w3-center w3-middle"><b>Q & A</b></h1>
+    </div>
+
+    <!-- Q&A content-->
+    <div class="w3-container">
+        <div class="w3-content" style="max-width:1200px">
+            <!-- question one -->
+            <div class="w3-row" style="display: flex; align-items: center;">
+                <div class="w3-col w3-left w3-container" style="width: 90px">
+                    <p><span class="w3-badge w3-xlarge w3-padding w3-red">Q</span></p>
+                </div>
+                <div class="w3-rest w3-container w3-padding-small">
+                    <h6><b>エンジニアという仕事に興味があるのですが、文系出身でも大丈夫ですか？</b></h6>
+                </div>
+            </div>
+
+            <div class="w3-row" style="display: flex; align-items: center;">
+                <div class="w3-col w3-left w3-container" style="width: 90px">
+                    <p><span class="w3-badge w3-xlarge w3-padding w3-teal">A</span></p>
+                </div>
+                <div class="w3-rest w3-container w3-padding-small">
+                    <p>業務や事業内容に興味があれば大丈夫です。文系の方も、やる気とチャレンジ精神、そして学び続ける意欲があれば歓迎します。文系出身者のエンジニアもたくさんいます。出身学科によらず活躍できる場面 がたくさんあるので安心してください。</p>
+                </div>
+            </div>
+            <br>
+            <!-- question two -->
+            <div class="w3-row" style="display: flex; align-items: center;">
+                <div class="w3-col w3-left w3-container" style="width: 90px">
+                    <p><span class="w3-badge w3-xlarge w3-padding w3-red">Q</span></p>
+                </div>
+                <div class="w3-rest w3-container w3-padding-small">
+                    <h6><b>入社後の研修は、やはりOJTなどが中心なのでしょうか？</b></h6>
+                </div>
+            </div>
+
+            <div class="w3-row" style="display: flex; align-items: center;">
+                <div class="w3-col w3-left w3-container" style="width: 90px">
+                    <p><span class="w3-badge w3-xlarge w3-padding w3-teal">A</span></p>
+                </div>
+                <div class="w3-rest w3-container w3-padding-small">
+                    <p>新卒は、マナー研修などの導入研修を行った後に、５月～6月の2カ月間の技術研修に入ります。座学と研修施設に設置されている実機（お客様先に納入されているものと同じ機器）を使った実習があります。基礎的な技術研修を経て、配属先でOJT（実践の場で上司やリーダーの指導）となります。キャリア採用の場合も、未経験の方は新卒と同等の技術研修を行います。</p>
+                </div>
+            </div>
+            <br>
+            <!-- question three -->
+            <div class="w3-row" style="display: flex; align-items: center;">
+                <div class="w3-col w3-left w3-container" style="width: 90px">
+                    <p><span class="w3-badge w3-xlarge w3-padding w3-red">Q</span></p>
+                </div>
+                <div class="w3-rest w3-container w3-padding-small">
+                    <h6><b>研修施設があるのですか？</b></h6>
+                </div>
+            </div>
+
+            <div class="w3-row" style="display: flex; align-items: center;">
+                <div class="w3-col w3-left w3-container" style="width: 90px">
+                    <p><span class="w3-badge w3-xlarge w3-padding w3-teal">A</span></p>
+                </div>
+                <div class="w3-rest w3-container w3-padding-small">
+                    <p>はい、あります。本社の研修施設「アカデメイア」と府中事業所内研修施設「府中LABO」それぞれに専任の講師が常駐し、みなさんの研修をフォローします。カリキュラムもオリジナルです。より実践力が身につく内容を現役エンジニアでもありみなさんの先輩でもある社員が丁寧にお教えします。</p>
+                </div>
+            </div>
+            <br>
+            <!-- question four -->
+            <div class="w3-row" style="display: flex; align-items: center;">
+                <div class="w3-col w3-left w3-container" style="width: 90px">
+                    <p><span class="w3-badge w3-xlarge w3-padding w3-red">Q</span></p>
+                </div>
+                <div class="w3-rest w3-container w3-padding-small">
+                    <h6><b>残業は、どのくらいあるのですか？</b></h6>
+                </div>
+            </div>
+
+            <div class="w3-row" style="display: flex; align-items: center;">
+                <div class="w3-col w3-left w3-container" style="width: 90px">
+                    <p><span class="w3-badge w3-xlarge w3-padding w3-teal">A</span></p>
+                </div>
+                <div class="w3-rest w3-container w3-padding-small">
+                    <p>平均して14時間/月です。プロジェクトによっては残業が発生したり少し多く感じる月もありますが全くないチームもあります。</p>
+                </div>
+            </div>
+            <br>
+            <!-- question five -->
+            <div class="w3-row" style="display: flex; align-items: center;">
+                <div class="w3-col w3-left w3-container" style="width: 90px">
+                    <p><span class="w3-badge w3-xlarge w3-padding w3-red">Q</span></p>
+                </div>
+                <div class="w3-rest w3-container w3-padding-small">
+                    <h6><b>転勤はありますか？</b></h6>
+                </div>
+            </div>
+
+            <div class="w3-row" style="display: flex; align-items: center;">
+                <div class="w3-col w3-left w3-container" style="width: 90px">
+                    <p><span class="w3-badge w3-xlarge w3-padding w3-teal">A</span></p>
+                </div>
+                <div class="w3-rest w3-container w3-padding-small">
+                    <p>年間で社員全体の1％程度。つまり年に5人程度が転勤しています。</p>
+                </div>
+            </div>
+            <br>
+            <!-- question six -->
+            <div class="w3-row" style="display: flex; align-items: center;">
+                <div class="w3-col w3-left w3-container" style="width: 90px">
+                    <p><span class="w3-badge w3-xlarge w3-padding w3-red">Q</span></p>
+                </div>
+                <div class="w3-rest w3-container w3-padding-small">
+                    <h6><b>出張はあるのですか？　多いのですか？</b></h6>
+                </div>
+            </div>
+
+            <div class="w3-row" style="display: flex; align-items: center;">
+                <div class="w3-col w3-left w3-container" style="width: 90px">
+                    <p><span class="w3-badge w3-xlarge w3-padding w3-teal">A</span></p>
+                </div>
+                <div class="w3-rest w3-container w3-padding-small">
+                    <p>プロジェクトチームによります。ほとんどないチームもあれば、海外出張のみのチームや、国内出張が多いなど様々です。当社は、チーム単位で仕事を担うので、1人で出張ということは、まずありません（たとえ1人で出張しても出張先で当社営業所の社員と合流することはあります）。</p>
+                </div>
+            </div>
+            <br>
+            <!-- last question  -->
+            <div class="w3-row" style="display: flex; align-items: center;">
+                <div class="w3-col w3-left w3-container" style="width: 90px">
+                    <p><span class="w3-badge w3-xlarge w3-padding w3-red">Q</span></p>
+                </div>
+                <div class="w3-rest w3-container w3-padding-small">
+                    <h6><b>休暇制度などあれば知りたいです</b></h6>
+                </div>
+            </div>
+
+            <div class="w3-row" style="display: flex; align-items: center;">
+                <div class="w3-col w3-left w3-container" style="width: 90px">
+                    <p><span class="w3-badge w3-xlarge w3-padding w3-teal">A</span></p>
+                </div>
+                <div class="w3-rest w3-container w3-padding-small">
+                    <p>社員のライフステージに合わせた働き方、休暇制度を整えています。DIC’SE独自の制度として「出産安定期手当付休暇」があります。これは「産前産後休暇」より前の時期、安定期に入るまでの間に取得できます。ほかには「育児休暇」「介護休暇」はもちろんのこと育児中の時短勤務など制度だけではなく誰もが働きやすい環境と職場づくりをすすめています。</p>
+                </div>
+            </div>
+            <br>
+        </div><!-- end of the content -->
+    </div><!-- end of the container -->
+    <hr>
+    <!-- Footer -->
+    <footer class="w3-container w3-padding" style="margin-top: 40px; height: 200px;">
+        <div class="w3-center">
+            <p>株式会社ディックソリューションエンジニアリング <br>
+            人事部　採用チーム</p>
+            <address>《本社》東京都港区浜松町1-29-6　浜松町セントラルビル２F <br>
+                ☎　03-6435-7899　✉　saiyo@dicse.com
+            </address>
+        </div>
+    </footer>
+</body>
+<script>
+
+    // Used to toggle the menu on small screens when clicking on the menu button
+    function myFunction() {
+        var x = document.getElementById("navDemo");
+        if (x.className.indexOf("w3-show") == -1) {
+            x.className += " w3-show";
+        } else {
+            x.className = x.className.replace(" w3-show", "");
+        }
+    }
+
+</script>
+
+</html>

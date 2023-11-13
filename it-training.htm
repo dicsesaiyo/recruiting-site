@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title lang="jp">情通系研修</title>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-colors-2021.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-colors-signal.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-colors-safety.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-colors-highway.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-colors-2020.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" type="text/css" href="https://dicsesaiyo.github.io/recruiting-site/styles.css">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+</head>
+<style>
+    /* Center images in their containers */
+    .w3-image-container {
+        display: flex;
+        justify-content: center;
+        /* Center horizontally */
+        align-items: center;
+        /* Center vertically */
+    }
+
+    /* Add a hover effect for the images and style the links */
+    .w3-image-link {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        transition: transform 0.3s;
+        /* Add a smooth transition */
+    }
+
+    .w3-image-link:hover {
+        transform: scale(1.05);
+        /* Increase the size on hover */
+    }
+
+    /* Add margin between image containers */
+    .w3-third {
+        margin: 0px;
+        /* Adjust the margin as needed */
+    }
+
+    /* hold over link for prev and next page */
+    .link {
+        color: #000;
+        /* Default color */
+        transition: color 0.1s;
+        /* Smooth color transition */
+    }
+
+    .link:hover {
+        color: red;
+        /* Color on hover */
+    }
+
+    @media (min-width: 768px) {
+        .ET {
+            margin-right: 150px;
+        }
+
+        .Voice {
+            margin-left: 150px;
+        }
+    }
+
+    @media (max-width: 600px) {
+
+        /* Adjust the size of prev and next arrow */
+        .material-symbols-outlined {
+            font-variation-settings:
+                'FILL' 0,
+                'wght' 400,
+                'GRAD' 0,
+                'opsz' 24
+        }
+
+        .w3-image-small {
+            text-align: center;
+            max-width: 50%;
+            height: auto;
+        }
+
+        /* Center images in their containers */
+        .w3-image-container {
+            display: flex;
+            justify-content: center;
+            /* Center horizontally */
+            align-items: center;
+            /* Center vertically */
+            margin-bottom: 20px;
+        }
+
+        .ET {
+            margin-right: 50px;
+        }
+
+        .Voice {
+            margin-left: 50px;
+        }
+    }
+
+    @media (min-width: 768px) {
+        .ET {
+            margin-right: 150px;
+        }
+
+        .Voice {
+            margin-left: 150px;
+        }
+    }
+</style>
+
+<body>
+    <div class="w3-top">
+        <div class="w3-bar w3-white w3-padding w3-card">
+            <img src="https://lh3.googleusercontent.com/pw/ADCreHdXb1yLlTSGMkHmHjUeen9eSn04gVlZIYfOgoQdCkp6PaCU1nWP-2FfmEk1T2mmPh6yU-lYw4pPRt_E-nUVihNBhFLinH0CIZllOt3kXggUi9WAZgk=w2400"
+                alt="Company Logo" style="height: 40px; vertical-align: middle;">
+            <!-- Wrap the text with an anchor tag and remove underline -->
+            <a href="https://dicsesaiyo.github.io/recruiting-site/"
+                style="display: inline-block; vertical-align: middle; line-height: 1; padding-top: 5px; text-decoration: none; color: black;">
+                <h5 style="margin: 0;"><b>RECRUITING</b></h5>
+                <h5 style="margin: 0;"><b>SITE 2024</b></h5>
+            </a>
+            <a class="w3-bar-item w3-button w3-padding w3-hide-large w3-right" href="javascript:void(0)"
+                onclick="myFunction()" title="Toggle Navigation Menu" style="padding: 0;margin: 0; margin-top: 2px;"><i
+                    class="fa fa-bars"></i></a>
+            <!-- Right-sided navbar links. Hide them on small screens -->
+            <div class="w3-right w3-hide-medium w3-hide-small" style="vertical-align: middle;">
+                <a href="https://dicsesaiyo.github.io/recruiting-site/services.htm"
+                    class="w3-bar-item w3-button"><b>事業案内</b></a>
+                <a href="https://dicsesaiyo.github.io/recruiting-site/recruit.htm"
+                    class="w3-bar-item w3-button"><b>採用案内</b></a>
+                <a href="https://dicsesaiyo.github.io/recruiting-site/staff-voices.htm"
+                    class="w3-bar-item w3-button"><b>社員の声</b></a>
+                <a href="https://dicsesaiyo.github.io/recruiting-site/benefits.htm"
+                    class="w3-bar-item w3-button"><b>福利厚生</b></a>
+                <a href="https://dicsesaiyo.github.io/recruiting-site/questions.htm"
+                    class="w3-bar-item w3-button"><b>Q&A</b></a>
+                <a href="https://www.dicse.com/" class="w3-bar-item w3-button" target="_blank"><b>DIC'SE HP</b></a>
+            </div>
+        </div>
+    </div>
+    <!-- Navbar on small screens-->
+    <div id="navDemo" class="w3-bar-block w3-2021-inkwell w3-hide w3-hide-large  w3-top" style="margin-top:57px">
+        <a href="https://dicsesaiyo.github.io/recruiting-site/services.htm"
+            class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">事業案内</a>
+        <a href="https://dicsesaiyo.github.io/recruiting-site/recruit.htm"
+            class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">採用案内</a>
+        <a href="https://dicsesaiyo.github.io/recruiting-site/staff-voices.htm"
+            class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">社員の声</a>
+        <a href="https://dicsesaiyo.github.io/recruiting-site/benefits.htm"
+            class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">福利厚生</a>
+        <a href="https://dicsesaiyo.github.io/recruiting-site/questions.htm"
+            class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">Q&A</a>
+        <a href="https://www.dicse.com/" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()"
+            target="_blank">DIC'SE HP</a>
+    </div>
+    <!-- voice content-->
+    <div class="w3-content" style="max-width:1100px; margin-top: 100px;">
+        <div class="w3-container w3-center" style="margin-top:30px;">
+            <h3 style="color: rgb(238, 49, 49); margin: 0;"><b>講師が語る研修の取り組み</b></h3>
+        </div>
+        <!-- voice 1-->
+        <div class="w3-row" style="margin-top: 40px;">
+            <div class="w3-col w3-image-container m3 w3-right w3-padding">
+                <img src="https://lh3.googleusercontent.com/pw/ADCreHeMFKqrLZF63XyCThXyhy86tjstVjB5jtbubsP5hmqjuW4FPxc8PIGMjjSMX2-D-kw72jwaO61aN1T7F9J1AOxERW8v7QZevYmwUeq2sUGObn6_2M8=w2400"
+                    alt="senior staff" class="w3-image-small" style="width: 100%;">
+                <div></div>
+            </div>
+            <div class="w3-col m9 w3-left">
+                <div class="w3-container w3-2020-ultramarine-green w3-padding">
+                    <p><span class="w3-large"><b>“得た知識が自信になる！”　「講師」　吉本　正人</b></span></p>
+                </div>
+                <div class="w3-container w3-padding">
+                    <h5><b>Q.情通事業って、どんな仕事をするのでしょうか？</b></h5>
+                    <p><b>A.</b> SEと聞いて、どんな印象をお持ちか？IT系のエンジニアと一口に言って、その得意分野は様々です。弊社の情通系エンジニアは、主にネットワークインフラに関する仕事をしています。
+                    </p>
+                    <h5><b>Q.研修のテーマは？</b></h5>
+                    <p><b>A.</b>弊社の新人って、じつは文系出身の方も多いんです。だから、新人全員のネットワークインフラに関する知識レベルを「0から１に引き上げる」ことが第一目標。デジタルネイティブと呼ばれる今の若い方たちは、インターネットを使うことが当たり前で特別なものという意識が希薄です。「使えるけど、仕組みは分からない」という方がほとんど。蛇口をひねれば水が出ることは知っている、でもどうやって水が届くのかは分からない。それと同じことですね。
+                    </p>
+                    <h5><b>Q.具体的な研修内容は？</b></h5>
+                    <p><b>A.</b>「三段構え」になっています。まず、導入部は弊社オリジナルテキストを使い、「インターネットはどうやってつながる？」といった基礎的な内容をおさらいします。次に、シスコシステムズ社が認定する資格CCNAの試験範囲について、弊社でe-ランニング化したカリキュラムに沿って講師による全体講義や、収録した解説動画出繰り返し復習しながら理解を深めていき、IT試験学習サイト「Ping-t」の問題集や弊社出編集した試験対策問題を解いて必要な実力をつけていきます。受験できるレベルに達した、と私たちが判断した人はいよいよ受験です。
+                    </p>
+                    <h5><b>Q.CCNAの合格率は？</b></h5>
+                    <p><b>A.</b>直近の2、3年ほどの成績だと、弊社の試験問題集で受験OKと認められる点数が取れた人たちは100%合格しています。その問題集は、過去の出題傾向を徹底分析したものですから、それだけの成績が取れているのだと思います。
+                    </p>
+                    <h5><b>Q.研修の今後のビジョンは？</b></h5>
+                    <p><b>A.</b>今、ありがたいことに入社してくれる方が増えていて、研修を分散して実施せざるを得ない状況です。そうなっても同期の方たちの交流は活性化してほしいという思いもあり、メタバースなどの仮想空間の活用も検討しています。地理的には離れていても、ひとつの空間で体験を共有できるような、そんな施策を考えています。
+                    </p>
+                </div>
+            </div>
+        </div><!-- end of voice 1-->
+        <!--研修風景-->
+        <div class="w3-panel w3-center w3-2020-ultramarine-green" style="margin-top: 50px;">
+            <h4 style="color: #ffffff;"><b>研修施設「アカデメイア」</b></h4>
+        </div>
+        <div class="w3-panel w3-center">
+            <h3 style="color: red;"><b>実機で学ぶから、一人一人の習熟度が違う</b></h3>
+            <p><b>一人一人の知識・習得状況に合わせて、IT技術を活用したアダプティブラーニングによる個別最適化された研修を行います。設置された最新のIT機器に触れながら、学んだ知識を自分のものとして体得できます。また経験豊富な専任講師の的確な指導の下、専門資格の取得を目指します。</b>
+            </p>
+        </div>
+        <div class="w3-row-padding">
+            <div class="w3-third">
+                <img src="https://lh3.googleusercontent.com/pw/ADCreHdu3u9D5KD2B6gMIF_YP1hGhZNukoAm-pc7TqinCAadM14yIGKttODgOORq7HXxq5U6vyvu-4jHnWGFci9m5XzayVue5fUcmJ0qfbvNvjgD4gjDnac=w2400"
+                    alt="device" style="width:100%">
+                <div class="w3-panel w3-border-left w3-border-grey">
+                    <h5>研修施設　“アカデメイア”</h5>
+                </div>
+            </div>
+
+            <div class="w3-third">
+                <img src="https://lh3.googleusercontent.com/pw/ADCreHd0bnC2htDBmpwB9yoFGGoIJgIrtw-chR1wMQulgcj1Mt4FcH81WGNfQFgwfNV-pqolliMnlqgjjLj1V4OrclDI9xcvxaBla7ofk1mEs5fVUtanJe8=w2400"
+                    alt="device" style="width:100%">
+                <div class="w3-panel w3-border-left w3-border-grey">
+                    <h5>実機研修</h5>
+                </div>
+            </div>
+
+            <div class="w3-third">
+                <img src="https://lh3.googleusercontent.com/pw/ADCreHdVzeipbEJp1KvTC5A8EGnQxTtFMhYa7oJIgPm41k53oHS4ADJKk3-wRFOGGRGCmQ-FECEEocXWCOrCxnxcz2lJ4zWueqZfBmpvQw7vVQ7UDVhUZ0s=w2400"
+                    alt="device" style="width:100%">
+                <div class="w3-panel w3-border-left w3-border-grey">
+                    <h5>ネットワーク基礎研修</h5>
+                </div>
+            </div>
+        </div>
+        <!-- previous and next -->
+        <div class="w3-container w3-center" style="margin-top: 50px; margin-bottom: 50px;">
+            <a href="https://dicsesaiyo.github.io/recruiting-site/dennki-training.htm" class="w3-large link ET"
+                style="text-decoration: none; display: inline-block; vertical-align: middle;">
+                <span class="material-symbols-outlined"
+                    style="vertical-align: middle;">keyboard_double_arrow_left</span>
+                <b style="vertical-align: middle;">電機系研修</b>
+            </a>
+            <a href="https://dicsesaiyo.github.io/recruiting-site/training-voice.htm" class="w3-large link Voice"
+                style="text-decoration: none; display: inline-block; vertical-align: middle;">
+                <b style="vertical-align: middle;">受講生の声</b>
+                <span class="material-symbols-outlined"
+                    style="vertical-align: middle;">keyboard_double_arrow_right</span>
+            </a>
+        </div>
+    </div><!-- end of the content -->
+    <hr>
+    <!-- Footer -->
+    <footer class="w3-container w3-padding" style="margin-top: 40px; height: 200px;">
+        <div class="w3-center">
+            <p>株式会社ディックソリューションエンジニアリング <br>
+                人事部　採用チーム</p>
+            <address>《本社》東京都港区浜松町1-29-6　浜松町セントラルビル２F <br>
+                ☎　03-6435-7899　✉　saiyo@dicse.com
+            </address>
+        </div>
+    </footer>
+</body>
+<script>
+    // Used to toggle the menu on small screens when clicking on the menu button
+    function myFunction() {
+        var x = document.getElementById("navDemo");
+        if (x.className.indexOf("w3-show") == -1) {
+            x.className += " w3-show";
+        } else {
+            x.className = x.className.replace(" w3-show", "");
+        }
+    }
+</script>
+
+</html>
