@@ -20,23 +20,19 @@
         margin-right: 20px;
         /* Adjust the value to control the spacing */
     }
-    .wistia_responsive_padding {
+@media (min-width: 769px) and (max-width: 1024px) {
+  .wistia_responsive_padding {
     padding: 56.25% 0 0 0; /* 16:9 aspect ratio */
     position: relative;
 }
 
 .wistia_responsive_wrapper {
-    height: 100%;
+    height: 75%;
     left: 0;
     position: absolute;
     top: 0;
-    width: 100%;
+    width: 75%;
 }
-
-@media (min-width: 769px) and (max-width: 1024px) {
-    .wistia_responsive_padding {
-        padding-top: 0; 
-    }
 }
 </style>
 <body>
