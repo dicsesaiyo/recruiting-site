@@ -15,47 +15,26 @@
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> <!-- Include jQuery -->
 </head>
 <style>
-        /* Add margin between the text and the icon */
+    /* Add margin between the text and the icon */
     button span {
         margin-right: 20px;
         /* Adjust the value to control the spacing */
     }
-.wistia_responsive_padding {
-    padding: 56.25% 0 0 0; /* 16:9 aspect ratio */
-    position: relative;
-}
 
-.wistia_responsive_wrapper {
-    height: 100%;
-    left: 0;
-    position: absolute;
-    top: 0;
-    width: 100%;
-}
-
-/* Media query for screens between 769px and 1024px */
-@media screen and (min-width: 769px) and (max-width: 1024px) {
-    .wistia_responsive_padding {
-        padding: 56.25% 0 0 0; /* Keep the same aspect ratio */
+    /* Media query for screens larger than 1024px */
+    @media screen and (min-width: 1025px) {
+        .w3-display-container {
+            max-width: 1500px;
+            margin-top: 57px;
+        }
     }
-
-    .wistia_responsive_wrapper {
-        height: 70%; /* Adjust as needed */
-        width: 70%; /* Adjust as needed */
+        /* Media query for typical laptop */
+    @media screen and (min-width: 769px) and (max-width: 1024px) {
+        .w3-display-container {
+            max-width: 800px;
+            margin-top: 57px;
+        }
     }
-}
-
-/* Media query for screens less than 769px */
-@media screen and (max-width: 768px) {
-    .wistia_responsive_padding {
-        padding: 56.25% 0 0 0; /* Keep the same aspect ratio */
-    }
-
-    .wistia_responsive_wrapper {
-        height: 60%; /* Adjust as needed */
-        width: 60%; /* Adjust as needed */
-    }
-}
 </style>
 <body>
     <!--top bar-->
@@ -94,16 +73,16 @@
         <a href="https://www.dicse.com/" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()"
             target="_blank">DIC'SE HP</a>
     </div>
-    <!-- Header vedio -->
-    <header class="w3-display-container w3-content w3-center" style="max-width:1500px;margin-top:57px;">
+    <!-- Header video -->
+<header class="w3-display-container w3-content w3-center">
         <script src="https://fast.wistia.com/embed/medias/p6szd6m327.jsonp" async></script>
         <script src="https://fast.wistia.com/assets/external/E-v1.js" async></script>
-        <div class="wistia_responsive_padding">
-            <div class="wistia_responsive_wrapper">
-                <div class="wistia_embed wistia_async_p6szd6m327 seo=true videoFoam=true">&nbsp;</div>
+        <div class="wistia_responsive_padding" style="padding:56.25% 0 0 0;position:relative;">
+            <div class="wistia_responsive_wrapper" style="height:100%;left:0;position:absolute;top:0;width:100%;">
+                <div class="wistia_embed wistia_async_p6szd6m327 seo=true videoFoam=true"
+                    style="height:100%;position:relative;width:100%">&nbsp;</div>
             </div>
         </div>
-
     </header>
 
     <!-- first photo grid -->
