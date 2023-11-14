@@ -36,12 +36,24 @@
 /* Media query for screens between 769px and 1024px */
 @media screen and (min-width: 769px) and (max-width: 1024px) {
     .wistia_responsive_padding {
-        padding: 56.25% 0 0 0; /* Adjust as needed */
+        padding: 56.25% 0 0 0; /* Keep the same aspect ratio */
     }
 
     .wistia_responsive_wrapper {
-        height: 75%; /* Adjust as needed */
-        width: 75%; /* Adjust as needed */
+        height: 70%; /* Adjust as needed */
+        width: 70%; /* Adjust as needed */
+    }
+}
+
+/* Media query for screens less than 769px */
+@media screen and (max-width: 768px) {
+    .wistia_responsive_padding {
+        padding: 56.25% 0 0 0; /* Keep the same aspect ratio */
+    }
+
+    .wistia_responsive_wrapper {
+        height: 60%; /* Adjust as needed */
+        width: 60%; /* Adjust as needed */
     }
 }
 </style>
