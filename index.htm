@@ -20,19 +20,29 @@
         margin-right: 20px;
         /* Adjust the value to control the spacing */
     }
-@media (min-width: 769px) and (max-width: 1024px) {
-  .wistia_responsive_padding {
+.wistia_responsive_padding {
     padding: 56.25% 0 0 0; /* 16:9 aspect ratio */
     position: relative;
 }
 
 .wistia_responsive_wrapper {
-    height: 75%;
+    height: 100%;
     left: 0;
     position: absolute;
     top: 0;
-    width: 75%;
+    width: 100%;
 }
+
+/* Media query for screens between 769px and 1024px */
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+    .wistia_responsive_padding {
+        padding: 56.25% 0 0 0; /* Adjust as needed */
+    }
+
+    .wistia_responsive_wrapper {
+        height: 75%; /* Adjust as needed */
+        width: 75%; /* Adjust as needed */
+    }
 }
 </style>
 <body>
@@ -76,10 +86,9 @@
     <header class="w3-display-container w3-content w3-center" style="max-width:1500px;margin-top:57px;">
         <script src="https://fast.wistia.com/embed/medias/p6szd6m327.jsonp" async></script>
         <script src="https://fast.wistia.com/assets/external/E-v1.js" async></script>
-        <div class="wistia_responsive_padding" style="padding:56.25% 0 0 0;position:relative;">
-            <div class="wistia_responsive_wrapper" style="height:100%;left:0;position:absolute;top:0;width:100%;">
-                <div class="wistia_embed wistia_async_p6szd6m327 seo=true videoFoam=true"
-                    style="height:100%;position:relative;width:100%">&nbsp;</div>
+        <div class="wistia_responsive_padding">
+            <div class="wistia_responsive_wrapper">
+                <div class="wistia_embed wistia_async_p6szd6m327 seo=true videoFoam=true">&nbsp;</div>
             </div>
         </div>
 
