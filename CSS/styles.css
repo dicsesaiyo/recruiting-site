@@ -64,6 +64,11 @@ a {
     .h5 {
         font-size: 1.6rem;
     }
+
+    h6,
+    .h6 {
+        font-size: 1.35rem;
+    }
 }
 
 /* Adjust font size for small screens */
@@ -86,6 +91,11 @@ a {
     h5,
     .h5 {
         font-size: 1.6rem;
+    }
+
+    h6,
+    .h6 {
+        font-size: 1.35rem;
     }
 }
 
