@@ -18,16 +18,7 @@
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 </head>
 <style>
-    @media (min-width: 768px) {
-        .ITT {
-            margin-right: 150px;
-        }
-
-        .Voice {
-            margin-left: 150px;
-        }
-    }
-
+    
     /* Center images in their containers */
     .w3-image-container {
         display: flex;
@@ -102,15 +93,47 @@
             /* Center vertically */
             margin-bottom: 20px;
         }
-
-        .ITT {
-            margin-right: 50px;
+    }
+    @media (min-width: 900px) {
+        .ET {
+            margin-right: 250px;
         }
 
         .Voice {
-            margin-left: 50px;
+            margin-left: 250px;
         }
     }
+
+    @media screen and (min-width: 768px) and (max-width: 899px) {
+        .ET {
+            margin-right: 150px;
+        }
+
+        .Voice {
+            margin-left: 150px;
+        }
+    }
+
+    @media screen and (max-width: 767px) and (min-width: 600px) {
+        .ET {
+            margin-right: 110px;
+        }
+
+        .Voice {
+            margin-left: 110px;
+        }
+    }
+
+    @media (max-width: 599px) {
+        .ET {
+            margin-right: 80px;
+        }
+
+        .Voice {
+            margin-left: 80px;
+        }
+    }
+    
 </style>
 
 <body>
@@ -193,11 +216,12 @@
             </div>
         </div><!-- end of voice 1-->
         <!--研修設備-->
-        <div class="w3-panel w3-center w3-highway-blue" style="margin-top: 50px;">
+        <div class="w3-panel w3-center w3-highway-blue" style="margin-top: 40px;">
             <h5 style="color: #ffffff;"><b>研修施設「府中LABO」</b></h5>
         </div>
-        <div class="w3-panel w3-center">
-            <h3 style="color: red;"><b>高電圧部品の扱い方も実機で学ぶ。技術力の高い人財を育成!</b></h3>
+        <div class="w3-panel w3-center" style="margin-top: 30px;margin-bottom: 30px;">
+            <h3 class="w3-hide-small" style="color: red;"><b>高電圧部品の扱い方も実機で学ぶ。技術力の高い人財を育成!</b></h3>
+            <h3 class="w3-hide-large w3-hide-medium" style="color: red;"><b>高電圧部品の扱い方も実機で学ぶ <br> 技術力の高い人財を育成!</b></h3>
             <p><b>当社は、技術者の技術力・提案力・判断力でお客様から高いご評価をいただいています。府中LABOには、受変電設備やモータードライブ装置、中央監視装置の実機を設置。実務に即した環境でエンジニア養成をサポートしています。PLCとHMIを使ったシミュレーションテストで納入するシステムの品質確保と付加価値向上を目指しています。</b>
             </p>
         </div>
@@ -206,14 +230,14 @@
                 <img src="https://lh3.googleusercontent.com/pw/ADCreHdw16_TXDEQ9z52EcN9tETbfUD48QBqhRxyLHs8dwyA7xek4peqgPFPuq3IJ7jNhivtgzj5YTaPZMtK-aa2Jb2l0u8PQSBk0BwWiK63pr7KoU-4aXg=w2400"
                     alt="device" style="width:100%">
                 <div class="w3-panel w3-border-left w3-border-grey">
-                    <h5>受変電設備の制御盤は全部で４面</h5>
+                    <h7>受変電設備の制御盤は全部で４面</h7>
                 </div>
             </div>
             <div class="w3-third">
                 <img src="https://lh3.googleusercontent.com/pw/ADCreHcXcLnn2_4nDpDET1p6HEgxRhuXHh1f7auf9H8rxysGv_0NG3lFDO0CzngoTaavUjsinYfisPfOBQv7vsQkulKyQvO1FOlDQtFccPSLIyBNv5qPDyQ=w2400"
                     alt="device" style="width:100%">
                 <div class="w3-panel w3-border-left w3-border-grey">
-                    <h5>DIC’SE自社設計のモータードライブ装置制御盤とその外部</h5>
+                    <h7>DIC’SE自社設計のモータードライブ装置制御盤とその外部</h7>
                 </div>
             </div>
 
@@ -221,7 +245,7 @@
                 <img src="https://lh3.googleusercontent.com/pw/ADCreHeUYZ1zhFowgDzgDUmlcjbB_Tjtcf7dHnu7_0ev6eIIe743OUe-3qpdrG20qF0A_0Ov_nqREkmFxCq48eLuuih-FzcTb5iapzF66RnGJZhXJuQy-l8=w2400"
                     alt="device" style="width:100%">
                 <div class="w3-panel w3-border-left w3-border-grey">
-                    <h5>DIC’SE自社設計のモータードライブ装置制御盤とその内部</h5>
+                    <h7>DIC’SE自社設計のモータードライブ装置制御盤とその内部</h7>
                 </div>
             </div>
         </div>
