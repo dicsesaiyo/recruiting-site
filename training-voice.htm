@@ -68,16 +68,6 @@
             /* Adjust the background color as needed */
         }
 
-        .ITT {
-            margin-right: 50px;
-            /* ITT is 情通系研修 　*/
-        }
-
-        .ET {
-            margin-left: 50px;
-            /* ET is 電機制御系研修　*/
-        }
-
         /* Define the alternating row background colors */
         .alternating-row:nth-child(4n+1),
         .alternating-row:nth-child(4n+3) {
@@ -89,8 +79,6 @@
             background-color: rgba(240, 239, 239, 0.51);
         }
     }
-
-
     /* Center images in their containers */
     .w3-image-container {
         display: flex;
@@ -133,7 +121,19 @@
         /* Color on hover */
     }
 
-    @media (min-width: 768px) {
+    @media (min-width: 900px) {
+        .ITT {
+            margin-right: 250px;
+            /* ITT is 情通系研修 　*/
+        }
+
+        .ET {
+            margin-left: 250px;
+            /* ET is 電機制御系研修　*/
+        }
+    }
+
+    @media screen and (min-width: 768px) and (max-width: 899px) {
         .ITT {
             margin-right: 150px;
             /* ITT is 情通系研修 　*/
@@ -141,6 +141,30 @@
 
         .ET {
             margin-left: 150px;
+            /* ET is 電機制御系研修　*/
+        }
+    }
+
+    @media screen and (max-width: 767px) and (min-width: 600) {
+        .ITT {
+            margin-right: 110px;
+            /* ITT is 情通系研修 　*/
+        }
+
+        .ET {
+            margin-left: 110px;
+            /* ET is 電機制御系研修　*/
+        }
+    }
+
+    @media (max-width: 599px) {
+        .ITT {
+            margin-right: 80px;
+            /* ITT is 情通系研修 　*/
+        }
+
+        .ET {
+            margin-left: 80px;
             /* ET is 電機制御系研修　*/
         }
     }
