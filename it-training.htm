@@ -60,17 +60,7 @@
         color: red;
         /* Color on hover */
     }
-
-    @media (min-width: 768px) {
-        .ET {
-            margin-right: 150px;
-        }
-
-        .Voice {
-            margin-left: 150px;
-        }
-    }
-
+    
     @media (max-width: 600px) {
 
         /* Adjust the size of prev and next arrow */
@@ -97,17 +87,18 @@
             /* Center vertically */
             margin-bottom: 20px;
         }
-
+    }
+    @media (min-width: 900px) {
         .ET {
-            margin-right: 50px;
+            margin-right: 250px;
         }
 
         .Voice {
-            margin-left: 50px;
+            margin-left: 250px;
         }
     }
 
-    @media (min-width: 768px) {
+    @media screen and (min-width: 768px) and (max-width: 899px) {
         .ET {
             margin-right: 150px;
         }
@@ -116,6 +107,27 @@
             margin-left: 150px;
         }
     }
+
+    @media screen and (max-width: 767px) and (min-width: 600px) {
+        .ET {
+            margin-right: 110px;
+        }
+
+        .Voice {
+            margin-left: 110px;
+        }
+    }
+
+    @media (max-width: 599px) {
+        .ET {
+            margin-right: 80px;
+        }
+
+        .Voice {
+            margin-left: 80px;
+        }
+    }
+    
 </style>
 
 <body>
@@ -199,10 +211,10 @@
             </div>
         </div><!-- end of voice 1-->
         <!--研修風景-->
-        <div class="w3-panel w3-center w3-2020-ultramarine-green" style="margin-top: 50px;">
+        <div class="w3-panel w3-center w3-2020-ultramarine-green" style="margin-top: 40px;">
             <h4 style="color: #ffffff;"><b>研修施設「アカデメイア」</b></h4>
         </div>
-        <div class="w3-panel w3-center">
+        <div class="w3-panel w3-center"  style="margin-top: 30px;margin-bottom: 30px;">
             <h3 style="color: red;"><b>実機で学ぶから、一人一人の習熟度が違う</b></h3>
             <p><b>一人一人の知識・習得状況に合わせて、IT技術を活用したアダプティブラーニングによる個別最適化された研修を行います。設置された最新のIT機器に触れながら、学んだ知識を自分のものとして体得できます。また経験豊富な専任講師の的確な指導の下、専門資格の取得を目指します。</b>
             </p>
@@ -212,7 +224,7 @@
                 <img src="https://lh3.googleusercontent.com/pw/ADCreHdu3u9D5KD2B6gMIF_YP1hGhZNukoAm-pc7TqinCAadM14yIGKttODgOORq7HXxq5U6vyvu-4jHnWGFci9m5XzayVue5fUcmJ0qfbvNvjgD4gjDnac=w2400"
                     alt="device" style="width:100%">
                 <div class="w3-panel w3-border-left w3-border-grey">
-                    <h5>研修施設　“アカデメイア”</h5>
+                    <h7>研修施設　“アカデメイア”</h7>
                 </div>
             </div>
 
@@ -220,7 +232,7 @@
                 <img src="https://lh3.googleusercontent.com/pw/ADCreHd0bnC2htDBmpwB9yoFGGoIJgIrtw-chR1wMQulgcj1Mt4FcH81WGNfQFgwfNV-pqolliMnlqgjjLj1V4OrclDI9xcvxaBla7ofk1mEs5fVUtanJe8=w2400"
                     alt="device" style="width:100%">
                 <div class="w3-panel w3-border-left w3-border-grey">
-                    <h5>実機研修</h5>
+                    <h7>実機研修</h7>
                 </div>
             </div>
 
@@ -228,7 +240,7 @@
                 <img src="https://lh3.googleusercontent.com/pw/ADCreHdVzeipbEJp1KvTC5A8EGnQxTtFMhYa7oJIgPm41k53oHS4ADJKk3-wRFOGGRGCmQ-FECEEocXWCOrCxnxcz2lJ4zWueqZfBmpvQw7vVQ7UDVhUZ0s=w2400"
                     alt="device" style="width:100%">
                 <div class="w3-panel w3-border-left w3-border-grey">
-                    <h5>ネットワーク基礎研修</h5>
+                    <h7>ネットワーク基礎研修</h7>
                 </div>
             </div>
         </div>
