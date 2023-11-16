@@ -27,6 +27,14 @@
         color: black;
     }
 
+    .tab-container {
+            position: sticky;
+            top: 56px;
+            z-index: 0;
+            background-color: rgba(255, 255, 255, 0.9);
+            /* Adjust the background color as needed */
+        }
+
     .tablink {
         cursor: pointer;
         /* Change cursor to hand (pointer) on hover */
@@ -59,15 +67,7 @@
             /* Center vertically */
             margin-bottom: 20px;
         }
-
-        .tab-container {
-            position: sticky;
-            top: 56px;
-            z-index: 0;
-            background-color: rgba(255, 255, 255, 0.9);
-            /* Adjust the background color as needed */
-        }
-
+        
         /* Define the alternating row background colors */
         .alternating-row:nth-child(4n+1),
         .alternating-row:nth-child(4n+3) {
