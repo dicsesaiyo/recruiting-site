@@ -7,6 +7,7 @@
     <title lang="jp">採用案内</title>
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-colors-2021.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-colors-2019.css">
     <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-colors-signal.css">
     <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-colors-safety.css">
     <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-colors-highway.css">
@@ -156,7 +157,7 @@ table {
         <div class="w3-container" style="margin-top: 30px;">
             <h2 class="w3-center"><b>募集要項</b></h2>
             <div class="w3-row w3-center" style="margin-bottom:10px; margin-left: 2px; margin-right: 2px;">
-                <button class="w3-col s6 tablink w3-highway-blue w3-padding" style="border:none;" id="defaultOpen"
+                <button class="w3-col s6 tablink w3-2019-princess-blue w3-padding" style="border:none;" id="defaultOpen"
                     onclick="openMenu(event, 'new')">新卒採用</button>
                 <button class="w3-col s6 tablink w3-padding" style="border:none;"
                     onclick="openMenu(event, 'old')">中途採用</button>
@@ -374,12 +375,12 @@ table {
         // Get all elements with class="tablink" and remove the class "w3-teal"
         tablinks = document.getElementsByClassName("tablink");
         for (i = 0; i < tablinks.length; i++) {
-            tablinks[i].classList.remove("w3-highway-blue");
+            tablinks[i].classList.remove("w3-2019-princess-blue");
         }
 
         // Show the current tab, and add a "w3-teal" class to the button that opened the tab
         document.getElementById(menuName).style.display = "table";
-        evt.currentTarget.classList.add("w3-highway-blue");
+        evt.currentTarget.classList.add("w3-2019-princess-blue");
     }
 
     // Click the "新卒採用" tab button by default
