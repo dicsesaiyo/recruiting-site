@@ -116,8 +116,10 @@
                 <h5 style="margin: 0;"><b>SITE 2024</b></h5>
             </a>
             <a class="w3-bar-item w3-button w3-padding w3-hide-large w3-right" href="javascript:void(0)"
-                onclick="myFunction()" title="Toggle Navigation Menu" style="padding: 0;margin: 0; margin-top: 2px;"><i
-                    class="fa fa-bars"></i></a>
+                onclick="myFunction()" title="Toggle Navigation Menu" style="padding: 0;margin: 0; margin-top: 2px;"
+                id="menuButton">
+                <i class="fa fa-bars"></i>
+            </a>
             <!-- Right-sided navbar links. Hide them on small screens -->
             <div class="w3-right w3-hide-medium w3-hide-small" style="vertical-align: middle;">
                 <a href="https://dicsesaiyo.github.io/recruiting-site/services.htm"
@@ -149,8 +151,7 @@
         <a href="https://www.dicse.com/" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()"
             target="_blank">DIC'SE HP</a>
     </div>
-    <!-- Header -->
-    <!-- Header with image -->
+    <!-- Header image-->
     <header class="w3-display-container w3-content w3-center" style="max-width:1500px;margin-top:57px;">
         <img class="w3-image w3-hide-small"
             src="https://lh3.googleusercontent.com/pw/ADCreHfoi_VoHN-ze8FrirTH4gYw6CBCq2HpnemiK3gMMwOgnkiDZnRUfY-0kNbJcW1L1sd6siT5NC4Nbl7HMDoBawtNfy7xhj7oqVSd--I3zGsThpoOnlI=w2400"
@@ -211,7 +212,6 @@
         <div class="w3-container">
             <h3 class="w3-center w3-padding-32"><b>各種社会保険や諸制度</b></h3>
         </div>
-
         <div class="w3-row-padding w3-padding-large">
             <div class="w3-third">
                 <img src="https://lh3.googleusercontent.com/pw/ADCreHfzNM98mDsAKbHbyipyJn9YJS-T4vRr0yTJ83fEG3xtLb24Df-NUk2QEF9LzBdJVgArz0jvl-btfISTBDmh2HOZ52zWrNEv4OHtRXMXjlXf4nMRRIM=w2400"
@@ -221,7 +221,6 @@
                     <p>各種社会保険完備 <br>健康保険、厚生年金、雇用保険、労災保険 </p>
                 </div>
             </div>
-
             <div class="w3-third">
                 <img src="https://lh3.googleusercontent.com/pw/ADCreHcJ5AKt3rM0UP4LikrMA5IJcgbSrIzVUxU6g1HCzUr5123_lAQ4hLzFC3G5beqQ6bJLdBV0swKFtgC4CiTZtNc2dElO0UDkagEDtV3X7wnopxr48QQ=w2400"
                     style="width:100%">
@@ -298,11 +297,8 @@
                     <li>宿泊施設や飲食店、レジャー施設、介護・育児サービス等、約140万件のサービスを優待価格で利用可能</li>
                     <li>無料で学べるeラーニングも充実</li>
                     <li>有名ホテル、全国チェーン店、レジャー施設も優待価格で利用可能（二親等までご利用になれます）</li>
-
                 </ul>
-
             </div>
-
         </div>
     </div>
     <hr>
@@ -322,10 +318,14 @@
     // Used to toggle the menu on small screens when clicking on the menu button
     function myFunction() {
         var x = document.getElementById("navDemo");
+        var menuButton = document.getElementById("menuButton");
+
         if (x.className.indexOf("w3-show") == -1) {
             x.className += " w3-show";
+            menuButton.innerHTML = "<strong>&#10006;</strong>"; // Bold "X" when menu is shown
         } else {
             x.className = x.className.replace(" w3-show", "");
+            menuButton.innerHTML = "<i class='fa fa-bars'></i>"; // Revert to bars icon when menu is hidden
         }
     }
 
