@@ -41,7 +41,10 @@
                 <h5 style="margin: 0;"><b>SITE 2024</b></h5>
             </a>
             <a class="w3-bar-item w3-button w3-padding w3-hide-large w3-right" href="javascript:void(0)"
-                onclick="myFunction()" title="Toggle Navigation Menu" style="padding: 0;margin: 0; margin-top: 2px;"><i class="fa fa-bars"></i></a>
+                onclick="myFunction()" title="Toggle Navigation Menu" style="padding: 0;margin: 0; margin-top: 2px;"
+                id="menuButton">
+                <i class="fa fa-bars"></i>
+            </a>
             <!-- Right-sided navbar links. Hide them on small screens -->
             <div class="w3-right w3-hide-medium w3-hide-small" style="vertical-align: middle;">
                 <a href="https://dicsesaiyo.github.io/recruiting-site/services.htm" class="w3-bar-item w3-button"><b>事業案内</b></a>
@@ -53,7 +56,6 @@
             </div>
         </div>
     </div>
-
     <!-- Navbar on small screens-->
     <div id="navDemo" class="w3-bar-block w3-2021-inkwell w3-hide w3-hide-large  w3-top" style="margin-top:57px">
         <a href="https://dicsesaiyo.github.io/recruiting-site/services.htm" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">事業案内</a>
@@ -63,7 +65,6 @@
         <a href="https://dicsesaiyo.github.io/recruiting-site/benefits.htm" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">福利厚生</a>
         <a href="https://www.dicse.com/" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()" target="_blank">DIC'SE HP</a>
     </div>
-    
     <!-- Header with image -->
     <header class="w3-display-container w3-content w3-center" style="max-width:1500px; margin-top:57px; margin-bottom: 30px;">
         <img class="w3-image w3-hide-small"
@@ -73,7 +74,6 @@
             src="https://lh3.googleusercontent.com/pw/ADCreHeqk2xUMfYqBaW_cTc97hk476qc2yR1p9QH7B-_4RI2t-cxGYVYj05kcz5xVMdKE5BL2lorGtSM2dXncQIF_3d2fBi2DHVye-Ubl3poM7-_L3s2bHk=w2400"
             alt="Me" width="100%">
     </header>
-
     <!-- Q&A content-->
     <div class="w3-container">
         <div class="w3-content" style="max-width:1200px">
@@ -86,7 +86,6 @@
                     <h5><b>エンジニアという仕事に興味があるのですが、文系出身でも大丈夫ですか？</b></h5>
                 </div>
             </div>
-
             <div class="w3-row" style="display: flex; ">
                 <div class="w3-col w3-left w3-container" style="width: 90px">
                     <p><span class="w3-badge w3-xlarge w3-padding w3-2019-princess-blue">A</span></p>
@@ -105,7 +104,6 @@
                     <h5><b>入社後の研修は、やはりOJTなどが中心なのでしょうか？</b></h5>
                 </div>
             </div>
-
             <div class="w3-row" style="display: flex;">
                 <div class="w3-col w3-left w3-container" style="width: 90px">
                     <p><span class="w3-badge w3-xlarge w3-padding w3-2019-princess-blue">A</span></p>
@@ -124,7 +122,6 @@
                     <h5><b>研修施設があるのですか？</b></h5>
                 </div>
             </div>
-
             <div class="w3-row" style="display: flex;">
                 <div class="w3-col w3-left w3-container" style="width: 90px">
                     <p><span class="w3-badge w3-xlarge w3-padding w3-2019-princess-blue">A</span></p>
@@ -143,7 +140,6 @@
                     <h5><b>残業は、どのくらいあるのですか？</b></h5>
                 </div>
             </div>
-
             <div class="w3-row" style="display: flex;">
                 <div class="w3-col w3-left w3-container" style="width: 90px">
                     <p><span class="w3-badge w3-xlarge w3-padding w3-2019-princess-blue">A</span></p>
@@ -162,7 +158,6 @@
                     <h5><b>転勤はありますか？</b></h5>
                 </div>
             </div>
-
             <div class="w3-row" style="display: flex;">
                 <div class="w3-col w3-left w3-container" style="width: 90px">
                     <p><span class="w3-badge w3-xlarge w3-padding w3-2019-princess-blue">A</span></p>
@@ -181,7 +176,6 @@
                     <h5><b>出張はあるのですか？　多いのですか？</b></h5>
                 </div>
             </div>
-
             <div class="w3-row" style="display: flex;">
                 <div class="w3-col w3-left w3-container" style="width: 90px">
                     <p><span class="w3-badge w3-xlarge w3-padding w3-2019-princess-blue">A</span></p>
@@ -200,7 +194,6 @@
                     <h5><b>休暇制度などあれば知りたいです</b></h5>
                 </div>
             </div>
-
             <div class="w3-row" style="display: flex;">
                 <div class="w3-col w3-left w3-container" style="width: 90px">
                     <p><span class="w3-badge w3-xlarge w3-padding w3-2019-princess-blue">A</span></p>
@@ -229,10 +222,14 @@
     // Used to toggle the menu on small screens when clicking on the menu button
     function myFunction() {
         var x = document.getElementById("navDemo");
+        var menuButton = document.getElementById("menuButton");
+
         if (x.className.indexOf("w3-show") == -1) {
             x.className += " w3-show";
+            menuButton.innerHTML = "<strong>&#10006;</strong>"; // Bold "X" when menu is shown
         } else {
             x.className = x.className.replace(" w3-show", "");
+            menuButton.innerHTML = "<i class='fa fa-bars'></i>"; // Revert to bars icon when menu is hidden
         }
     }
 
