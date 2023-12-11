@@ -30,7 +30,7 @@ a {
 /* Font size for medium-sized screens */
 @media (max-width: 900px) {
     body {
-        font-size: 1.35rem;
+        font-size: 1.3rem;
     }
 
     h2,
@@ -47,7 +47,7 @@ a {
 /* Font size for medium-sized screens */
 @media (max-width: 768px) {
     body {
-        font-size: 1.35rem;
+        font-size: 1.25rem;
     }
 
     h2,
@@ -74,7 +74,7 @@ a {
 /* Adjust font size for small screens */
 @media (max-width: 600px) {
     body {
-        font-size: 1.35rem;
+        font-size: 1.2rem;
         /* Change to your preferred font size */
     }
 
