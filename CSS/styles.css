@@ -30,7 +30,7 @@ a {
 /* Font size for medium-sized screens */
 @media (max-width: 900px) {
     body {
-        font-size: 1.35rem;
+        font-size: 1.5rem;
     }
 
     h2,
@@ -47,7 +47,7 @@ a {
 /* Font size for medium-sized screens */
 @media (max-width: 768px) {
     body {
-        font-size: 1.35rem;
+        font-size: 1.4rem;
     }
 
     h2,
@@ -67,14 +67,14 @@ a {
 
     h6,
     .h6 {
-        font-size: 1.35rem;
+        font-size: 1.4rem;
     }
 }
 
 /* Adjust font size for small screens */
 @media (max-width: 600px) {
     body {
-        font-size: 1.35rem;
+        font-size: 1.4rem;
         /* Change to your preferred font size */
     }
 
@@ -95,10 +95,35 @@ a {
 
     h6,
     .h6 {
-        font-size: 1.35rem;
+        font-size: 1.4rem;
     }
 }
 
 .tablink {
     cursor: pointer;
+}
+
+/* Adjust font size for staff voice name of senior staff */
+@media (max-width: 1900px) {
+    .custom-panel p {
+        font-size: 1.4rem;
+    }
+}
+
+@media screen and (max-width: 1000px) and (min-width: 900px) {
+    .custom-panel p {
+        font-size: 1.2rem;
+    }
+}
+
+@media screen and (max-width: 899px) and (min-width: 830px) {
+    .custom-panel p {
+        font-size: 1.11rem;
+    }
+}
+
+@media screen and (max-width: 829px) and (min-width: 700px) {
+    .custom-panel p {
+        font-size: 1.1rem;
+    }
 }
