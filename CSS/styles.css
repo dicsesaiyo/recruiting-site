@@ -107,7 +107,7 @@ a {
 /* Adjust font size for staff voice name of senior staff */
 @media (max-width: 1900px) {
     .custom-panel p {
-        font-size: 1.4rem;
+        font-size: 1.3rem;
     }
 }
 
