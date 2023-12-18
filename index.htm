@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="stylesheet" type="text/css" href="https://dicsesaiyo.github.io/recruiting-site/CSS/styles.css">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> <!-- Include jQuery -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-DYJX7T3RK0"></script>
 </head>
 <style>
     /* Add margin between the text and the icon */
@@ -184,6 +185,12 @@
             menuButton.innerHTML = "<i class='fa fa-bars'></i>"; // Revert to bars icon when menu is hidden
         }
     }
+    //Google Analytics//
+    window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-DYJX7T3RK0');
 
 </script>
 
