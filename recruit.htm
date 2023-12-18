@@ -15,6 +15,7 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="stylesheet" type="text/css" href="https://dicsesaiyo.github.io/recruiting-site/CSS/styles.css">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-DYJX7T3RK0"></script>
 </head>
 <style>
     /* size of mynavi */
@@ -386,6 +387,13 @@ table {
 
     // Click the "新卒採用" tab button by default
     document.getElementById("defaultOpen").click();
+
+    //Google Analytics//
+    window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-DYJX7T3RK0');
 
 </script>
 
