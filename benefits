@@ -123,17 +123,17 @@
             </a>
             <!-- Right-sided navbar links. Hide them on small screens -->
             <div class="w3-right w3-hide-medium w3-hide-small" style="vertical-align: middle;">
-                <a href="https://dicsesaiyo.github.io/recruiting-site/president-message.htm"
+                <a href="https://dicsesaiyo.github.io/recruiting-site/president-message"
                     class="w3-bar-item w3-button"><b>社長メッセージ</b></a>
-                <a href="https://dicsesaiyo.github.io/recruiting-site/services.htm"
+                <a href="https://dicsesaiyo.github.io/recruiting-site/services"
                     class="w3-bar-item w3-button"><b>事業案内</b></a>
-                <a href="https://dicsesaiyo.github.io/recruiting-site/recruit.htm"
+                <a href="https://dicsesaiyo.github.io/recruiting-site/recruit"
                     class="w3-bar-item w3-button"><b>採用案内</b></a>
-                <a href="https://dicsesaiyo.github.io/recruiting-site/training.htm"
+                <a href="https://dicsesaiyo.github.io/recruiting-site/training"
                     class="w3-bar-item w3-button"><b>教育・研修</b></a>
-                <a href="https://dicsesaiyo.github.io/recruiting-site/staff-voices.htm"
+                <a href="https://dicsesaiyo.github.io/recruiting-site/staff-voices"
                     class="w3-bar-item w3-button"><b>社員の声</b></a>
-                <a href="https://dicsesaiyo.github.io/recruiting-site/questions.htm"
+                <a href="https://dicsesaiyo.github.io/recruiting-site/questions"
                     class="w3-bar-item w3-button"><b>Q&A</b></a>
                 <a href="https://www.dicse.com/" class="w3-bar-item w3-button" target="_blank"><b>DIC'SE HP</b></a>
             </div>
@@ -141,17 +141,17 @@
     </div>
     <!-- Navbar on small screens-->
     <div id="navDemo" class="w3-bar-block w3-2021-inkwell w3-hide w3-hide-large  w3-top" style="margin-top:57px">
-        <a href="https://dicsesaiyo.github.io/recruiting-site/president-message.htm"
+        <a href="https://dicsesaiyo.github.io/recruiting-site/president-message"
             class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">社長メッセージ</a>
-        <a href="https://dicsesaiyo.github.io/recruiting-site/services.htm"
+        <a href="https://dicsesaiyo.github.io/recruiting-site/services"
             class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">事業案内</a>
-        <a href="https://dicsesaiyo.github.io/recruiting-site/recruit.htm"
+        <a href="https://dicsesaiyo.github.io/recruiting-site/recruit"
             class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">採用案内</a>
-        <a href="https://dicsesaiyo.github.io/recruiting-site/training.htm"
+        <a href="https://dicsesaiyo.github.io/recruiting-site/training"
             class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">教育・研修</a>
-        <a href="https://dicsesaiyo.github.io/recruiting-site/staff-voices.htm"
+        <a href="https://dicsesaiyo.github.io/recruiting-site/staff-voices"
             class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">社員の声</a>
-        <a href="https://dicsesaiyo.github.io/recruiting-site/questions.htm"
+        <a href="https://dicsesaiyo.github.io/recruiting-site/questions"
             class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">Q&A</a>
         <a href="https://www.dicse.com/" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()"
             target="_blank">DIC'SE HP</a>
